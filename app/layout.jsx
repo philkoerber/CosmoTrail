@@ -1,5 +1,6 @@
 import { Layout } from '@/components/dom/Layout'
 import '@/global.css'
+import Header from './Header'
 
 export const metadata = {
   title: 'Next.js + Three.js',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
+        <Header />
         {/* To avoid FOUT with styled-components wrap Layout with StyledComponentsRegistry https://beta.nextjs.org/docs/styling/css-in-js#styled-components */}
         <Layout>{children}</Layout>
       </body>
